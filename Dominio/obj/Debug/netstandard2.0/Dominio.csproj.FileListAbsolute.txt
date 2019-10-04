@@ -6,3 +6,12 @@ D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Domi
 D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
 D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.dll
 D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.pdb

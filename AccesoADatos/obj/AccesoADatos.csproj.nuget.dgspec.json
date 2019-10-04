@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspace\\repos\\tp3_CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj": {}
+    "D:\\Workspace\\Repos\\tp3CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj": {}
   },
   "projects": {
-    "D:\\workspace\\repos\\tp3_CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj": {
+    "D:\\Workspace\\Repos\\tp3CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\repos\\tp3_CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj",
+        "projectUniqueName": "D:\\Workspace\\Repos\\tp3CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj",
         "projectName": "AccesoADatos",
-        "projectPath": "D:\\workspace\\repos\\tp3_CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj",
-        "packagesPath": "C:\\Users\\Francisco-Desktop\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\repos\\tp3_CrespoFrancisco\\AccesoADatos\\obj\\",
+        "projectPath": "D:\\Workspace\\Repos\\tp3CrespoFrancisco\\AccesoADatos\\AccesoADatos.csproj",
+        "packagesPath": "C:\\Users\\Paco\\.nuget\\packages\\",
+        "outputPath": "D:\\Workspace\\Repos\\tp3CrespoFrancisco\\AccesoADatos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Francisco-Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Paco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://ultragestionweb.com.ar/nugetserver/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,16 +54,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }

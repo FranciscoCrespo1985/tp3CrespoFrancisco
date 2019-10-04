@@ -24,10 +24,9 @@ namespace Presentacion
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
-            string user = txtUsuario.Text;
-            string password = txtPassword.Text;
-            string userName = "Francisco";
-            string passName = "Shampoo";
+            string codigo = txtCodigoVoucher.Text;
+            
+          
             if (user.Equals(userName) && password.Equals(passName))
             {
                 Response.Write("<script>alert('USUARIO CORRECTO')</script>");
