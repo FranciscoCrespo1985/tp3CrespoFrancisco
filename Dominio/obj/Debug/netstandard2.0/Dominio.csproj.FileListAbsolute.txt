@@ -1,0 +1,8 @@
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.pdb

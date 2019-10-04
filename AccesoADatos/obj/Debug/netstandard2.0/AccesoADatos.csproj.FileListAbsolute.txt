@@ -1,0 +1,8 @@
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\bin\Debug\netstandard2.0\AccesoADatos.deps.json
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\bin\Debug\netstandard2.0\AccesoADatos.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.csprojAssemblyReference.cache
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.AssemblyInfoInputs.cache
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.AssemblyInfo.cs
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\bin\Debug\netstandard2.0\AccesoADatos.pdb
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.pdb

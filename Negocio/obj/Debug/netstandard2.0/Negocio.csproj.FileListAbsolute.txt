@@ -1,0 +1,13 @@
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\Negocio.deps.json
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\Negocio.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\Negocio.pdb
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\Dominio.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\Dominio.pdb
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.csprojAssemblyReference.cache
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.AssemblyInfoInputs.cache
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.AssemblyInfo.cs
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.csproj.CopyComplete
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.pdb
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\AccesoADatos.dll
+D:\workspace\repos\tp3\tp3_CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\AccesoADatos.pdb
