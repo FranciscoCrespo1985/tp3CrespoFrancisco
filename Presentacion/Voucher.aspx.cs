@@ -10,15 +10,18 @@ namespace Presentacion
 {
     public partial class Login : System.Web.UI.Page
     {
+        VoucherNegocio negocio;
+        List<Voucher> vouchers;
         protected void Page_Load(object sender, EventArgs e)
         {
-            VoucherNegocio negocio = new VoucherNegocio();
-            
-            dgvVouchers.DataSource = negocio.listar();
+            negocio = new VoucherNegocio();
+            vouchers = negocio.listar(); 
+            dgvVouchers.DataSource = vouchers;
             dgvVouchers.DataBind();
+            
 
-           // if (!IsPostBack)
-             //   txtTextbox.Text = "Bienvenide";
+            // if (!IsPostBack)
+            //   txtTextbox.Text = "Bienvenide";
 
         }
 
@@ -26,12 +29,16 @@ namespace Presentacion
         {
             string codigo = txtCodigoVoucher.Text;
             
+            if (vouchers.Any(item => item.CodigoVoucher == codigo))
+            {
+                Response.Write("# alert(<% = codigo %>)");
+            }
           
-            if (user.Equals(userName) && password.Equals(passName))
+           /* if (user.Equals(userName) && password.Equals(passName))
             {
                 Response.Write("<script>alert('USUARIO CORRECTO')</script>");
             }
-            else { Response.Write("<script>alert('USUARIO INCORRECTO')</script>"); }
+            else { Response.Write("<script>alert('USUARIO INCORRECTO')</script>"); }*/
 
         }
     }
