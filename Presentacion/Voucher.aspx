@@ -19,10 +19,7 @@
                     <div class="form-group">
                          <asp:TextBox ID="txtCodigoVoucher"  runat="server"  CssClass="form-control" placeholder="ingrese usuario"></asp:TextBox>
                     </div>
-                    
-                              
                 </div>
-                    
                 <div class="footer bg-gray">
                     <asp:Button ID="btnCangear" runat="server" cssclass="btn bg-olive btn-block" Text="Login" OnClick="btnIngresar_Click"/>
                 </div>

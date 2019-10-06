@@ -13,5 +13,17 @@ namespace Presentacion
         {
 
         }
+
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+     
+
+            /* if (user.Equals(userName) && password.Equals(passName))
+             {
+                 Response.Write("<script>alert('USUARIO CORRECTO')</script>");
+             }
+             else { Response.Write("<script>alert('USUARIO INCORRECTO')</script>"); }*/
+
+        }
     }
 }
