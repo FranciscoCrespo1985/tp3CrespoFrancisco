@@ -13,23 +13,5 @@ namespace Presentacion
 
     public partial class Producto
     {
-
-        /// <summary>
-        /// txtCodigoVoucher control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigoVoucher;
-
-        /// <summary>
-        /// btnCangear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCangear;
     }
 }

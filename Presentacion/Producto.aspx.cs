@@ -4,17 +4,23 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Dominio;
+using Negocio;
 
 namespace Presentacion
 {
     public partial class Producto : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public List<Dominio.Producto> listaProductos;
+        
+        
+        public void Page_Load(object sender, EventArgs e)
         {
-
+            ProductoNegocio negocio = new ProductoNegocio();
+            listaProductos = negocio.listar();
         }
 
-        protected void btnIngresar_Click(object sender, EventArgs e)
+        public void btnIngresar_Click(object sender, EventArgs e)
         {
      
 
