@@ -219,6 +219,7 @@
     <Content Include="css\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="css\images\ui-icons_d8e7f3_256x240.png" />
     <Content Include="css\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="css\ionicons.min.css" />
     <Content Include="css\ionslider\ion.rangeSlider.css" />
     <Content Include="css\ionslider\ion.rangeSlider.skinFlat.css" />
     <Content Include="css\ionslider\ion.rangeSlider.skinNice.css" />
@@ -388,10 +389,25 @@
     <Content Include="js\plugins\sparkline\jquery.sparkline.min.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="Producto.aspx" />
     <Content Include="Voucher.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Producto.aspx.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Producto.aspx.designer.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
     <Compile Include="Voucher.aspx.cs">
       <DependentUpon>Voucher.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -423,6 +439,7 @@
     <Content Include="css\bootstrap\bootstrap.css.map" />
     <Content Include="css\bootstrap\bootstrap.min.css.map" />
     <None Include="packages.config" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
