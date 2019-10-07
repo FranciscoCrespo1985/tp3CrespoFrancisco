@@ -28,11 +28,12 @@ namespace Presentacion
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
             string codigo = txtCodigoVoucher.Text;
-           
             if (vouchers.Any(item => item.CodigoVoucher == codigo))
             {
+                Session["NumeroVoucher" + Session.SessionID] = codigo;
                 Response.Redirect("Producto.aspx");
                 Response.Write(vouchers.Find(item => item.CodigoVoucher == codigo).CodigoVoucher);
+                
             }
           
            /* if (user.Equals(userName) && password.Equals(passName))

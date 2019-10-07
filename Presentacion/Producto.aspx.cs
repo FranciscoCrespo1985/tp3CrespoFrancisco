@@ -16,6 +16,7 @@ namespace Presentacion
         
         public void Page_Load(object sender, EventArgs e)
         {
+            string VoucherSeleccionado = Session["NumeroVoucher" + Session.SessionID].ToString(); ;
             ProductoNegocio negocio = new ProductoNegocio();
             listaProductos = negocio.listar();
         }
