@@ -30,9 +30,9 @@ namespace Presentacion
             string codigo = txtCodigoVoucher.Text;
             if (vouchers.Any(item => item.CodigoVoucher == codigo))
             {
-                Session["NumeroVoucher" + Session.SessionID] = codigo;
+                Session["CodigoVoucher" + Session.SessionID] = codigo;
                 Response.Redirect("Producto.aspx");
-                Response.Write(vouchers.Find(item => item.CodigoVoucher == codigo).CodigoVoucher);
+                
                 
             }
           

@@ -16,15 +16,17 @@ namespace Presentacion
         
         public void Page_Load(object sender, EventArgs e)
         {
-            string VoucherSeleccionado = Session["NumeroVoucher" + Session.SessionID].ToString(); ;
+            Session["CodigoVoucher" + Session.SessionID].ToString();
+
             ProductoNegocio negocio = new ProductoNegocio();
             listaProductos = negocio.listar();
         }
 
         public void btnIngresar_Click(object sender, EventArgs e)
         {
-     
 
+
+            
             /* if (user.Equals(userName) && password.Equals(passName))
              {
                  Response.Write("<script>alert('USUARIO CORRECTO')</script>");

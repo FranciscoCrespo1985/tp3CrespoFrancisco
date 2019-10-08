@@ -10,6 +10,6 @@
 namespace Presentacion {
     
     
-    public partial class Producto {
+    public partial class Cliente {
     }
 }

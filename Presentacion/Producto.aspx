@@ -2,7 +2,7 @@
 
 <asp:Content  runat="server" ID="ListaProducto" ContentPlaceHolderID="ContentPlaceHolder1">
      
-     <p> <% Session["NumeroVoucher" + Session.SessionID].ToString(); %></p>  
+    
     <div class="card-columns" style="margin-left: 10px; margin-right: 10px; margin-top:10px;">
        
         <% foreach (var item in listaProductos)
@@ -13,7 +13,7 @@
                 <h5 class="card-title"><% = item.Titulo %></h5>
                 <p class="card-text"><% = item.Descripcion %></p>
             </div>
-            <a class="btn btn-primary btn-block" href="PokemonDetail.aspx?idpkm=<% = item.Id.ToString() %>">Seleccionar</a>
+            <a class="btn btn-primary btn-block" href="Cliente.aspx?idprod=<% = item.Id.ToString() %>">Seleccionar</a>
             
         </div>
         <% } %>
