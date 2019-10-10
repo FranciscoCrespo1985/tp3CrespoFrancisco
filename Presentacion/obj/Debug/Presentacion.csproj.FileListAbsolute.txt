@@ -180,4 +180,3 @@ D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.csproj
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.dll
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.pdb
-D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache

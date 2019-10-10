@@ -9,10 +9,20 @@ namespace Presentacion
 {
     public partial class Cliente : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             int idprod = Convert.ToInt32(Request.QueryString["idprod"]);
             Session["CodigoProducto" + Session.SessionID]=idprod;
+
+            string email = inputEmail3.Text;
+
+        }
+        protected void btnIngresarDNI(object sender, EventArgs e) {
+
+          
+          
+        
         }
     }
 }
