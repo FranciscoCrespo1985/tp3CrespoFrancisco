@@ -10,6 +10,7 @@ D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.d
 D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.dll
 D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
 D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
 D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
 D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
 D:\Workspace\Repos\tp3CrespoFrancisco\Dominio\obj\Debug\netstandard2.0\Dominio.dll

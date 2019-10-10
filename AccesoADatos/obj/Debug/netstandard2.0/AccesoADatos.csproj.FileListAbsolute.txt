@@ -10,6 +10,7 @@ D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\bin\Debug\netstandard2.0\Acce
 D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\bin\Debug\netstandard2.0\AccesoADatos.dll
 D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\bin\Debug\netstandard2.0\AccesoADatos.pdb
 D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.csprojAssemblyReference.cache
+D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.csproj.CoreCompileInputs.cache
 D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.AssemblyInfoInputs.cache
 D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.AssemblyInfo.cs
 D:\Workspace\Repos\tp3CrespoFrancisco\AccesoADatos\obj\Debug\netstandard2.0\AccesoADatos.dll

@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Presentacion
-{
-
-
-    public partial class Cliente
-    {
-
+namespace Presentacion {
+    
+    
+    public partial class Cliente {
+        
         /// <summary>
         /// inputDNI control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Presentacion
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox inputDNI;
-
+        
         /// <summary>
         /// btnIngresaDNI control.
         /// </summary>
@@ -31,16 +29,16 @@ namespace Presentacion
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnIngresaDNI;
-
+        
         /// <summary>
-        /// inputEmail3 control.
+        /// inputEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox inputEmail3;
-
+        protected global::System.Web.UI.WebControls.TextBox inputEmail;
+        
         /// <summary>
         /// inputNombre control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Presentacion
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox inputNombre;
-
+        
         /// <summary>
         /// inputApellido control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace Presentacion
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox inputApellido;
-
+        
         /// <summary>
         /// inputDireccion control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace Presentacion
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox inputDireccion;
-
+        
         /// <summary>
         /// inputCiudad control.
         /// </summary>
@@ -76,23 +74,23 @@ namespace Presentacion
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox inputCiudad;
-
+        
         /// <summary>
-        /// inputlCodigoPostal control.
+        /// inputCodigoPostal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox inputlCodigoPostal;
-
+        protected global::System.Web.UI.WebControls.TextBox inputCodigoPostal;
+        
         /// <summary>
-        /// btnCangear control.
+        /// btncangear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCangear;
+        protected global::System.Web.UI.WebControls.Button btncangear;
     }
 }

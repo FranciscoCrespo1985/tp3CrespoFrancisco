@@ -1,0 +1,1 @@
+insert into clientes(dni,nombre,apellido,email,direccion,ciudad,codigopostal,fecharegistro) values (32036612,'Francisco','Crespo','gpacomail@gmail.com','3 de febrero 1162','Buenos Aires','1676',getdate())
