@@ -16,8 +16,8 @@ namespace Presentacion
         {
             negocio = new VoucherNegocio();
             vouchers = negocio.listar(); 
-            dgvVouchers.DataSource = vouchers;
-            dgvVouchers.DataBind();
+            //dgvVouchers.DataSource = vouchers;
+            //dgvVouchers.DataBind();
             
 
             // if (!IsPostBack)

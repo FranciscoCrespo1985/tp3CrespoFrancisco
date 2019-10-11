@@ -31,6 +31,7 @@ namespace Presentacion
             inputCodigoPostal.Enabled = false;
             inputNombre.Enabled = false;
             inputDireccion.Enabled = false;
+            btncangear.Enabled = false;
 
 
 
@@ -52,6 +53,7 @@ namespace Presentacion
                     inputNombre.Enabled = true;
                     inputDireccion.Enabled = true;
                     inputDNI.Enabled = false;
+                    btncangear.Enabled = true;
                     update = true;
                 }
                 else
@@ -64,6 +66,7 @@ namespace Presentacion
                     inputCodigoPostal.Enabled = true;
                     inputNombre.Enabled = true;
                     inputDireccion.Enabled = true;
+                    btncangear.Enabled = true;
                     update = false;
                 }
             }else{

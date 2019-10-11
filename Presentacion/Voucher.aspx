@@ -24,7 +24,7 @@
                     <asp:Button ID="btnCangear" runat="server" cssclass="btn bg-olive btn-block" Text="Ingresar" OnClick="btnIngresar_Click"/>
                 </div>
         </div>
-        <asp:GridView ID="dgvVouchers" runat="server"></asp:GridView>
+        <!-- <asp:GridView ID="dgvVouchers" runat="server"></asp:GridView> -->
     </form>
 
     
