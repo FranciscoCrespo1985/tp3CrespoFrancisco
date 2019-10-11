@@ -391,6 +391,7 @@
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
     <Content Include="Producto.aspx" />
+    <Content Include="success.aspx" />
     <Content Include="Voucher.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -415,6 +416,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="success.aspx.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="success.aspx.designer.cs">
+      <DependentUpon>success.aspx</DependentUpon>
     </Compile>
     <Compile Include="Voucher.aspx.cs">
       <DependentUpon>Voucher.aspx</DependentUpon>

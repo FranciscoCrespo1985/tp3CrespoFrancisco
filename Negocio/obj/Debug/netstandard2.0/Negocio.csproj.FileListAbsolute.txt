@@ -19,7 +19,6 @@ D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\Dominio.d
 D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\AccesoADatos.pdb
 D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\bin\Debug\netstandard2.0\Dominio.pdb
 D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.csprojAssemblyReference.cache
-D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.csproj.CoreCompileInputs.cache
 D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.AssemblyInfoInputs.cache
 D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.AssemblyInfo.cs
 D:\Workspace\Repos\tp3CrespoFrancisco\Negocio\obj\Debug\netstandard2.0\Negocio.csproj.CopyComplete

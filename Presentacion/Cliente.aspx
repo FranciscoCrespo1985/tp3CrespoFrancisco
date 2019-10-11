@@ -86,61 +86,77 @@
                var direccion = document.getElementById("inputDireccion").value;
                var ciudad = document.getElementById("inputCiudad").value;
                var postal = document.getElementById("inputCodigoPostal").value;
-
+               var correcto = false;
                
                if (nombre === "") {
 
                    $("#groupNombre").addClass("has-error");
-
+                   correcto = true;
                }
                else {
                    $("#groupNombre").removeClass("has-error");
                    $("#groupNombre").addClass("has-success");
+                   correcto = true;
                }
 
                if (apellido === "") {
                    $("#groupApellido").addClass("has-error");
+                   correcto = true;
                }
                else
                {
                    $("#groupApellido").removeClass("has-error");
                    $("#groupApellido").addClass("has-success");
+                   correcto = true;
+                   
                }
 
                if (direccion === "") {
                    $("#groupDireccion").addClass("has-error");
+                   correcto = true;
                }
                else {
                    $("#groupDireccion").removeClass("has-error");
                    $("#groupDireccion").addClass("has-success");
+                   correcto = true;
+                   
                }
 
                if (ciudad === "") {
                    $("#groupCiudad").addClass("has-error");
+                   correcto = true;
                }
                else {
                    $("#groupCiudad").removeClass("has-error");
                    $("#groupCiudad").addClass("has-success");
+                   correcto = true;
+                  
                }
                if (postal === "") {
                    $("#groupCodigoPostal").addClass("has-error");
+                   correcto = true;
                }
                else {
                    $("#groupCodigoPostal").removeClass("has-error");
                    $("#groupCodigoPostal").addClass("has-success");
+                   correcto = true;
+                 
                }
                if (email === "") {
                    $("#groupEmail").addClass("has-error");
+                   correcto = true;
                }
                else {
                    $("#groupEmail").removeClass("has-error");
                    $("#groupEmail").addClass("has-success");
+                   correcto = true;
+                   
                }
 
 
 
 
-               return false;
+               return correcto;
            }
 
         </script>      

@@ -177,7 +177,6 @@ D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\bin\System.Data.SqlClient.xml
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\bin\AccesoADatos.pdb
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
-D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.dll
 D:\Workspace\Repos\tp3CrespoFrancisco\Presentacion\obj\Debug\Presentacion.pdb

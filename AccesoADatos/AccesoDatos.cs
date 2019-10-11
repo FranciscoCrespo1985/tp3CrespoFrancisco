@@ -12,8 +12,8 @@ namespace AccesoADatos
 
         public  AccesoDatos()
         {
-            /*laptop*/conexion = new SqlConnection("data source=Paco-PC; initial catalog=TP_WEB; integrated security=sspi");
-            /*casa*/ //conexion = new SqlConnection("data source=DESKTOP-3OE155I\\SQLEXPRESS; initial catalog=TP_WEB; integrated security=sspi");
+            /*laptop*///conexion = new SqlConnection("data source=Paco-PC; initial catalog=TP_WEB; integrated security=sspi");
+            /*casa*/ conexion = new SqlConnection("data source=DESKTOP-3OE155I\\SQLEXPRESS; initial catalog=TP_WEB; integrated security=sspi");
             comando = new SqlCommand();
             comando.Connection = conexion;
         }
@@ -54,7 +54,7 @@ namespace AccesoADatos
             conexion.Close();
         }
 
-        internal void ejecutarAccion()
+        public void ejecutarAccion()
         {
             try
             {

@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using AccesoADatos;
 using Dominio;
+using System.Net;
+using System.Net.Mail;
 namespace Negocio
 {
     public class ClienteNegocio
     {
-
 
         public List<Cliente> listar()
         {
@@ -49,7 +50,110 @@ namespace Negocio
             return lista;
         }
 
+        public void update(Cliente aux)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearQuery("update Clientes set nombre =@nombre,apellido=@apellido,email=@email,direccion=@direccion,ciudad=@ciudad,codigopostal=@codigopostal where id = @id");
+                datos.agregarParametro("@nombre", aux.Nombre);
+                datos.agregarParametro("@apellido", aux.Apellido);
+                datos.agregarParametro("@email", aux.Email);
+                datos.agregarParametro("@direccion", aux.Direccion);
+                datos.agregarParametro("@ciudad", aux.Ciudad);
+                datos.agregarParametro("@codigopostal", aux.CodigoPostal);
+                datos.agregarParametro("@id", aux.Id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex) {
+                throw ex;            
+            }
+            finally
+            {
+                datos.cerrarConexion();
+                datos = null;
+            }
+
+            
+        }
+        public void insertar(Cliente aux) {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearQuery("insert into clientes(dni,nombre,apellido,email,direccion,ciudad,codigopostal,fecharegistro) values (@dni,@nombre,@apellido,@email,@direccion,@ciudad,@codigopostal,getdate())");
+                datos.agregarParametro("@nombre", aux.Nombre);
+                datos.agregarParametro("@apellido", aux.Apellido);
+                datos.agregarParametro("@dni", aux.DNI);
+                datos.agregarParametro("@email", aux.Email);
+                datos.agregarParametro("@direccion", aux.Direccion);
+                datos.agregarParametro("@ciudad", aux.Ciudad);
+                datos.agregarParametro("@codigopostal", aux.CodigoPostal);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally {
+                datos.cerrarConexion();
+                datos = null;
+            }
+        
+        }
+
+        public long Contar()
+        {
+            AccesoDatos datos = new AccesoDatos();
+            long count;
+            try
+            {
+                datos.setearQuery("SELECT COUNT(*) FROM clientes");
+                datos.conexion.Open();
+                count = (long)datos.comando.ExecuteScalar();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+                datos = null;
+                
+            }
+            return count;
+        }
+
+        public void EnviarMail(Cliente aux, long idProducto, long idVoucher)
+        {
+            var fromAddress = new MailAddress("francisco.crespo@axsis.com.ar", "VoucherMania");
+            var toAddress = new MailAddress("gpacomail@gmail.com", "Francisco");
+            const string fromPassword = "Francisco_2018";
+            const string subject = "Vouchermania Por Francisco Crespo Utn Programaicon 3";
+            string body = "Gracias por participar VoucherMania";
+
+            var smtp = new SmtpClient
+            {
+                Host = "mail.axsis.com.ar",
+                Port = 25,
+                EnableSsl = false,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(fromAddress.Address, fromPassword),
 
 
+            };
+            using (var message = new MailMessage(fromAddress, toAddress)
+            {
+                Subject = subject,
+                Body = body
+            })
+            {
+                smtp.Send(message);
+            }
+        }
     }
 }

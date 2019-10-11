@@ -16,7 +16,7 @@ namespace Presentacion
         
         public void Page_Load(object sender, EventArgs e)
         {
-            Session["CodigoVoucher" + Session.SessionID].ToString();
+            
 
             ProductoNegocio negocio = new ProductoNegocio();
             listaProductos = negocio.listar();

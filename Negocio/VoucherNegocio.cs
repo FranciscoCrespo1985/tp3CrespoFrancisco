@@ -17,7 +17,7 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearQuery("SELECT v.Id,v.CodigoVoucher,v.Estado,isnull(v.IdCliente,-1),isnull(v.IdProducto,-1),isnull(v.FechaRegistro,-1) FROM Vouchers as v ");
+                datos.setearQuery("SELECT v.Id,v.CodigoVoucher,v.Estado,isnull(v.IdCliente,-1),isnull(v.IdProducto,-1),isnull(v.FechaRegistro,-1) FROM Vouchers as v where v.idproducto is null and v.idcliente is null");
                 datos.ejecutarLector();
                 while (datos.lector.Read())
                 {
@@ -51,8 +51,26 @@ namespace Negocio
         
         }
 
-       
-
-
+        public void update(long idcliente, long idProducto, long idVoucher)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearQuery("update vouchers set idcliente =@IdCliente,idproducto=@IdProducto where id = @id");
+                datos.agregarParametro("@IdCliente", idcliente);
+                datos.agregarParametro("@IdProducto", idProducto);
+                datos.agregarParametro("@id", idVoucher);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+                datos = null;
+            }
+        }
     }
 }

@@ -14,12 +14,13 @@ namespace Presentacion
         List<Dominio.Cliente> clientes;
         ClienteNegocio negocioCliente = new ClienteNegocio();
         Dominio.Cliente aux;
-        
+        long idprod;
+        bool update = false;
         protected void Page_Load(object sender, EventArgs e)
         {
             aux = new Dominio.Cliente();
-            int idprod = Convert.ToInt32(Request.QueryString["idprod"]);
-            Session["CodigoProducto" + Session.SessionID]=idprod;
+            idprod = Convert.ToInt64(Request.QueryString["idprod"]);
+            Session["CodigoProducto" + Session.SessionID] = idprod;
             clientes = negocioCliente.listar();
             string email = inputEmail.Text;
 
@@ -37,7 +38,7 @@ namespace Presentacion
         protected void btnIngresarDNI(object sender, EventArgs e) {
             int auxDNI;
             bool success = Int32.TryParse(inputDNI.Text, out auxDNI );
-
+            success = ((auxDNI.ToString().Length) > 4 && (auxDNI.ToString().Length) < 10) && (success == true) ? true : false;
             if (success)
             {
                 aux = clientes.Find(item => item.DNI == Int32.Parse(inputDNI.Text));
@@ -50,17 +51,20 @@ namespace Presentacion
                     inputCodigoPostal.Enabled = true;
                     inputNombre.Enabled = true;
                     inputDireccion.Enabled = true;
+                    inputDNI.Enabled = false;
+                    update = true;
                 }
                 else
                 {
                     vaciarCampos();
-
+                    inputDNI.Enabled = false;
                     inputEmail.Enabled = true;
                     inputCiudad.Enabled = true;
                     inputApellido.Enabled = true;
                     inputCodigoPostal.Enabled = true;
                     inputNombre.Enabled = true;
                     inputDireccion.Enabled = true;
+                    update = false;
                 }
             }else{
                 inputDNI.Text = "Debe ingresar un dni";
@@ -97,14 +101,41 @@ namespace Presentacion
             inputEmail.Text = aux.Email;
             inputDireccion.Text= aux.Direccion;
             inputCiudad.Text = aux.Ciudad;
-            inputCodigoPostal.Text = aux.CodigoPostal;
-
-
-           
+            inputCodigoPostal.Text = aux.CodigoPostal;          
 
         }
 
-        protected void btnCangear(object sender, EventArgs e) {
+        protected void btnCangear(object sender, EventArgs e) 
+        {
+            aux = clientes.Find(item => item.DNI == Int32.Parse(inputDNI.Text));
+            long idcliente;
+            VoucherNegocio voucherNegocio = new VoucherNegocio();
+            if (aux!=null)
+            {
+                aux.Apellido = inputApellido.Text;
+                aux.Nombre = inputNombre.Text;
+                aux.Email = inputEmail.Text;
+                aux.Direccion = inputDireccion.Text;
+                aux.Ciudad = inputCiudad.Text;
+                aux.CodigoPostal = inputCodigoPostal.Text;
+                negocioCliente.update(aux);
+                idcliente = aux.Id;
+            }
+            else {
+                aux = new Dominio.Cliente();
+                aux.DNI = Int32.Parse(inputDNI.Text);
+                aux.Apellido = inputApellido.Text;
+                aux.Nombre = inputNombre.Text;
+                aux.Email = inputEmail.Text;
+                aux.Direccion = inputDireccion.Text;
+                aux.Ciudad = inputCiudad.Text;
+                aux.CodigoPostal = inputCodigoPostal.Text;
+                negocioCliente.insertar(aux);
+                idcliente = negocioCliente.Contar();
+            }
+            voucherNegocio.update(idcliente,(long)Session["CodigoProducto" + Session.SessionID], (long)Session["CodigoVoucher" + Session.SessionID]);
+            negocioCliente.EnviarMail(aux,(long) Session["CodigoProducto" + Session.SessionID], (long)Session["CodigoVoucher" + Session.SessionID]);
+            Response.Redirect("success.aspx");
 
 
         }
