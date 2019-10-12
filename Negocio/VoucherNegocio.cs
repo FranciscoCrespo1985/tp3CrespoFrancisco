@@ -56,10 +56,11 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearQuery("update vouchers set idcliente =@IdCliente,idproducto=@IdProducto where id = @id");
+                datos.setearQuery("update vouchers set idcliente =@IdCliente,idproducto=@IdProducto,fecharegistro=getdate() where id = @id");
                 datos.agregarParametro("@IdCliente", idcliente);
                 datos.agregarParametro("@IdProducto", idProducto);
                 datos.agregarParametro("@id", idVoucher);
+                
                 datos.ejecutarAccion();
             }
             catch (Exception ex)
