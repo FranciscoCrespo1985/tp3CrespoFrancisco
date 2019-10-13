@@ -105,18 +105,18 @@ namespace Negocio
         public long Contar()
         {
             AccesoDatos datos = new AccesoDatos();
-            long count;
+            Int32 count;
             try
             {
                 datos.setearQuery("SELECT COUNT(*) FROM clientes");
                 datos.conexion.Open();
-                count = (long)datos.comando.ExecuteScalar();
+                count = (Int32)datos.comando.ExecuteScalar();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
             finally
             {
